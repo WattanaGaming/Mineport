@@ -1,8 +1,9 @@
 -- Execute necessary files
 local files = {
-    "tools.lua",
-    "nodes.lua",
-    "biomes.lua"
+    "modules/groups.lua",
+    "modules/tools.lua",
+    "modules/nodes.lua",
+    "modules/biomes.lua"
 }
 
 for _, file in ipairs(files) do
