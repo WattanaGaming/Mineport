@@ -1,4 +1,5 @@
 minetest.register_alias("mapgen_stone", "minecraft:stone")
+minetest.register_alias("mapgen_water_source", "minecraft:dummy_node")
 
 minetest.register_biome({
     name = "Plains",
@@ -10,6 +11,6 @@ minetest.register_biome({
     depth_filler = 3,
 
     y_max = 30,
-    y_min = 15,
+    y_min = 1,
     vertical_blend = 8
 })
