@@ -7,5 +7,5 @@ local files = {
 }
 
 for _, file in ipairs(files) do
-	dofile(minetest.get_modpath("minecraft").."/"..file)
+	dofile(minetest.get_modpath("mineport").."/"..file)
 end
