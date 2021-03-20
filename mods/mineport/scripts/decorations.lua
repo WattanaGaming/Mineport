@@ -58,3 +58,17 @@ minetest.register_decoration({
 
     decoration = "mineport:grass",
 })
+
+-- Grass (plains biome)
+minetest.register_decoration({
+    deco_type = "simple",
+    place_on = "mineport:grass_block",
+    fill_ratio = 0.7,
+
+    biomes = {
+        "plains"
+    },
+    y_min = 1,
+
+    decoration = "mineport:grass",
+})

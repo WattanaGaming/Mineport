@@ -1,16 +1,25 @@
 minetest.register_craft({
-    output = "mineport:stick",
+    output = "mineport:stick 4",
     recipe = {
-        {"group:planks"},
-        {"group:planks"},
+        {"group:plank"},
+        {"group:plank"},
     }
 })
 
 minetest.register_craft({
     output = "mineport:wooden_axe",
     recipe = {
-        {"group:planks","group:planks",""},
-        {"group:planks","mineport:stick",""},
+        {"group:plank","group:plank",""},
+        {"group:plank","mineport:stick",""},
         {"","mineport:stick",""}
+    }
+})
+
+minetest.register_craft({
+    output = "mineport:wooden_pickaxe",
+    recipe = {
+        {"group:plank", "group:plank","group:plank"},
+        {"","mineport:stick",""},
+        {"","mineport:stick",""},
     }
 })

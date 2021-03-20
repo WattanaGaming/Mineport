@@ -4,6 +4,10 @@ mineport = {}
 mineport.water_range = 6
 mineport.drowning = 2
 
+mineport.woodtypes = {
+    "Oak",
+}
+
 mineport.colors = {
     grass = "#90C450",
     water_post_effect = "#95c7bb4F",
@@ -30,6 +34,8 @@ mineport.defaultGroupcaps = function(overrides)
         wood = {times = {3}},
         leaf = {times = {0.3}},
         plant = {times = {0}},
+        stone = {times = {7.5}},
+        cobbled = {times = {10}}
     }
     if overrides then
         assert(type(overrides) == "table")
