@@ -7,5 +7,3 @@ function minetest.debug(...) end
 ---@param level logLevel
 ---@param message string
 function minetest.log(level, message) end
-
-minetest.log("none")
