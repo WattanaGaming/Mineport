@@ -15,11 +15,13 @@ function mtworks.dirTree(dir, fileHandler)
     assert(dir, "directory must be specified")
     fileHandler = fileHandler or function() end
 
+    -- Files.
     local files = minetest.get_dir_list(dir, false)
     for _,file in ipairs(files) do
         fileHandler(dir.."/"..file)
     end
 
+    -- Directories.
     local directories = minetest.get_dir_list(dir, true)
     for _,directory in ipairs(directories) do
         mtworks.dirTree(dir.."/"..directory, fileHandler)
